@@ -39,6 +39,11 @@ function setOp(newOp) {
     toClear = true;
 }
 
+// round the result
+function result(num) {
+    return Math.round(num * 1000) / 1000;
+}
+
 // do the evaluation for the current equation in the stack
 function evaluate() {
     if (op === null || toClear) return;
@@ -49,11 +54,6 @@ function evaluate() {
     }
     screen.textContent = result(operate(op, x, y));
     op = null;
-}
-
-// round the result
-function result(num) {
-    return Math.round(num * 1000) / 1000;
 }
 
 // clear the screen to add more numbers
