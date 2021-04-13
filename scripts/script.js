@@ -50,6 +50,7 @@ function evaluate() {
     y = screen.textContent;
     if (op === "/" && y === "0") {
         reset();
+        alert("You know you cannot divide by zero...");
         return;
     }
     screen.textContent = result(operate(op, x, y));
