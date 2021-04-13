@@ -1,0 +1,135 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************************************************/
+
+body {
+    background-color: #1F2833;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    width: 100vw;
+}
+
+#header h1 {
+    color: #C5C6C7;
+    font-size: 3em;
+}
+
+/* Page flexbox container */
+#container {
+    align-items: center;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100vw;
+}
+
+/* Calculator container */
+#calculator {
+    align-items: center;
+    background-color: #0B0C10;
+    border: 2px solid #66FCF1;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+}
+  
+#screen {
+    background-color: #C5C6C7;
+    border: 2px solid #66FCF1;
+    border-radius: 5px;
+    color: #0B0C10;
+    font-size: 30px;
+    height: 80px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 20px;
+    text-align: right;
+    width: 307px;
+}
+
+#buttons-grid {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    height: 350px;
+    margin-bottom: 25px;
+    width: 350px;
+}
+
+.btn {
+    background-color: #C5C6C7;
+    border: 2px solid #66FCF1;
+    border-radius: 5px;
+    color: #0B0C10;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.span-2 {
+    background-color: #1F2833;
+    color: #C5C6C7;
+    grid-column: span 2;
+}
+
+[operator] {
+    background-color: #1F2833;
+    color: #C5C6C7;
+}
